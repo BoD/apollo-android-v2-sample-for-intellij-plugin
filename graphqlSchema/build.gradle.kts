@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.apollographql.apollo:apollo-runtime:2.5.11")
+    implementation("com.apollographql.apollo:apollo-runtime:2.5.13")
 }
 
 apollo {

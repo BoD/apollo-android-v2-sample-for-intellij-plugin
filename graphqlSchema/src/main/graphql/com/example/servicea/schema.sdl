@@ -2,6 +2,10 @@ type Query {
 	computers: [Computer!]!
 }
 
+type Mutation {
+    computers: [Computer!]!
+}
+
 type Computer {
 	id: ID!
 	cpu: String!

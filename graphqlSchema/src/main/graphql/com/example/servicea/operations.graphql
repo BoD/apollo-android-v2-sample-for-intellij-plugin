@@ -13,3 +13,19 @@ query ServiceAQuery1 {
         }
     }
 }
+
+mutation ServiceAMutation1 {
+    computers {
+        id
+        ... on Computer {
+            cpu
+            year
+            screen {
+                resolution
+                ... on Screen {
+                    isColor
+                }
+            }
+        }
+    }
+}
