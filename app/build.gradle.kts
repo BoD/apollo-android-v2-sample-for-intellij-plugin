@@ -25,3 +25,9 @@ apollo {
     service("service-a") {}
     service("service-b") {}
 }
+
+tasks.register("printClasspath") {
+    doLast {
+        sourceSets["main"].runtimeClasspath.files.forEach { println(it) }
+    }
+}

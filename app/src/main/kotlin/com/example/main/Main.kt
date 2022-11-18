@@ -21,5 +21,10 @@ suspend fun main() {
         .build()
 
     val response: Response<ServiceAMutation1Mutation.Data> = apolloClient.mutate(ServiceAMutation1Mutation()).await()
+    apolloClient.mutate(ServiceAMutation1Mutation()).await()
+
+    val response2: com.apollographql.apollo.api.Response<ServiceAMutation1Mutation.Data> = apolloClient.mutate(ServiceAMutation1Mutation()).await()
+
+
     println(response.data)
 }
