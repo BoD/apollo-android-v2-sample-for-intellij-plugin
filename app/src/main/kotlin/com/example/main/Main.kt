@@ -1,6 +1,8 @@
 package com.example.main
 
+import com.apollographql.apollo.ApolloCall
 import com.apollographql.apollo.ApolloClient
+import com.apollographql.apollo.ApolloMutationCall
 import com.apollographql.apollo.api.Response
 import com.apollographql.apollo.coroutines.await
 import com.example.servicea.ServiceAMutation1Mutation
@@ -19,6 +21,12 @@ suspend fun main() {
     val apolloClient = ApolloClient.builder()
         .serverUrl("http://example.com")
         .build()
+
+    val y = apolloClient.mutate(ServiceAMutation1Mutation())
+    y.await()
+
+    val x : ApolloMutationCall<Unit>? =null
+    x!!.await()
 
     val response: Response<ServiceAMutation1Mutation.Data> = apolloClient.mutate(ServiceAMutation1Mutation()).await()
     apolloClient.mutate(ServiceAMutation1Mutation()).await()
