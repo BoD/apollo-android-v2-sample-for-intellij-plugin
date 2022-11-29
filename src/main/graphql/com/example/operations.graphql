@@ -1,4 +1,4 @@
-query ServiceAQuery1 {
+query MyQuery1 {
     computers {
         id
         ... on Computer {
@@ -14,7 +14,7 @@ query ServiceAQuery1 {
     }
 }
 
-mutation ServiceAMutation1 {
+mutation MyMutation1 {
     computers {
         id
         ... on Computer {
