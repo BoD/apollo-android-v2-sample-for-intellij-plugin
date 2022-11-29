@@ -15,7 +15,6 @@ dependencies {
 
 apollo {
     generateKotlinModels.set(true)
-    rootPackageName.set("com.example")
 }
 
 tasks.register("printClasspath") {

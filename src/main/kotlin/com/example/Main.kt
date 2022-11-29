@@ -4,7 +4,6 @@ import com.apollographql.apollo.ApolloClient
 import com.apollographql.apollo.ApolloMutationCall
 import com.apollographql.apollo.api.Response
 import com.apollographql.apollo.coroutines.await
-import com.example.com.example.MyMutation1Mutation
 
 suspend fun main() {
     val apolloClient = ApolloClient.builder()
