@@ -4,6 +4,8 @@ query MyQuery1 {
         ... on Computer {
             cpu
             year
+            dateTime
+            url
             screen {
                 resolution
                 ... on Screen {

@@ -11,6 +11,8 @@ repositories {
 dependencies {
     implementation("com.apollographql.apollo:apollo-runtime:2.5.14")
     implementation("com.apollographql.apollo:apollo-coroutines-support:2.5.14")
+    implementation("com.apollographql.apollo:apollo-normalized-cache:2.5.14")
+    implementation("com.apollographql.apollo:apollo-http-cache:2.5.14")
 }
 
 apollo {
