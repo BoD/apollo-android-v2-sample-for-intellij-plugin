@@ -16,6 +16,7 @@ dependencies {
 }
 
 apollo {
+    // packageName.set("com.example")
     generateKotlinModels.set(true)
 }
 
