@@ -12,7 +12,7 @@ suspend fun main() {
     val apolloHttpCache1 = ApolloHttpCache(diskLruHttpCacheStore1)
 
     val diskLruHttpCacheStore2 = DiskLruHttpCacheStore(FileSystem.SYSTEM, File(""), maxSize)
-    val apolloHttpCache2 = ApolloHttpCache(diskLruHttpCacheStore1)
+    val apolloHttpCache2 = ApolloHttpCache(diskLruHttpCacheStore2)
 
     val apolloHttpCache3 = ApolloHttpCache(DiskLruHttpCacheStore(File(""), maxSize))
     val apolloHttpCache4 = ApolloHttpCache(DiskLruHttpCacheStore(FileSystem.SYSTEM, File(""), maxSize))
