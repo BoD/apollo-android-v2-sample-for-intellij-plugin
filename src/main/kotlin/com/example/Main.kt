@@ -23,4 +23,6 @@ suspend fun main() {
         .build()
 
     println(response.data)
+
+    println(MyMutation1Mutation.OPERATION_NAME.name())
 }
