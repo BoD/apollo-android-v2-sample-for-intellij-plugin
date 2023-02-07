@@ -1,4 +1,4 @@
-query MyQuery1 {
+query MyQuery1($includeComputerFragment: Boolean!) {
     computers {
         id
         ... on Computer {
@@ -12,9 +12,23 @@ query MyQuery1 {
                     isColor
                 }
             }
+
+            ...ComputerFragment @include(if: $includeComputerFragment)
         }
     }
 }
+
+fragment ComputerFragment on Computer {
+    cpu
+    year
+    ...ComputerFragment2 @include(if: $includeComputerFragment)
+}
+
+fragment ComputerFragment2 on Computer {
+    cpu
+    year
+}
+
 
 mutation MyMutation1 {
     computers {

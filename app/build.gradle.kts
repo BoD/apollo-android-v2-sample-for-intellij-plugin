@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.apollographql.apollo").version("2.5.14")
+    id("com.apollographql.apollo").version("2.4.5")
 }
 
 android {
@@ -46,12 +46,12 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")
 
     // Apollo
-    implementation("com.apollographql.apollo:apollo-runtime:2.5.14")
-    implementation("com.apollographql.apollo:apollo-coroutines-support:2.5.14")
-    implementation("com.apollographql.apollo:apollo-normalized-cache:2.5.14")
-    implementation("com.apollographql.apollo:apollo-normalized-cache-sqlite:2.5.14")
-    implementation("com.apollographql.apollo:apollo-http-cache:2.5.14")
-    implementation("com.apollographql.apollo:apollo-idling-resource:2.5.14")
+    implementation("com.apollographql.apollo:apollo-runtime:2.4.5")
+    implementation("com.apollographql.apollo:apollo-coroutines-support:2.4.5")
+    implementation("com.apollographql.apollo:apollo-normalized-cache:2.4.5")
+    implementation("com.apollographql.apollo:apollo-normalized-cache-sqlite:2.4.5")
+    implementation("com.apollographql.apollo:apollo-http-cache:2.4.5")
+    implementation("com.apollographql.apollo:apollo-idling-resource:2.4.5")
 }
 
 apollo {
